@@ -7,42 +7,38 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class HelloHttpServlet extends HttpServlet
-{
+public class HelloHttpServlet extends HttpServlet {
 
-		private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-		ServletConfig             config           = null;
+  ServletConfig config = null;
 
-		public void init( ServletConfig config )
-		{
-				this.config = config;
-				System.out.println("-----------------------------------------------------");
-				System.out.println("init method has been called and servlet is initialized");
-				System.out.println("-----------------------------------------------------");
-		}
+  public void init(ServletConfig config) {
+    this.config = config;
+    System.out.println("-----------------------------------------------------");
+    System.out.println("init method has been called and servlet is initialized");
+    System.out.println("-----------------------------------------------------");
+  }
 
-		public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException,
-		                IOException
-		{
+  public void doGet(HttpServletRequest request, HttpServletResponse response)
+      throws ServletException, IOException {
 
-				System.out.println("-----------------------------------------------------");
-				System.out.println("doGet method has been called");
-				System.out.println("-----------------------------------------------------");
+    System.out.println("-----------------------------------------------------");
+    System.out.println("doGet method has been called");
+    System.out.println("-----------------------------------------------------");
 
-				response.setContentType("text/html");
+    response.setContentType("text/html");
 
-				PrintWriter out = response.getWriter();
-				out.print("<html><body>");
-				out.print("<b>hello HTTP servlet</b>");
-				out.print("</body></html>");
-		}
+    PrintWriter out = response.getWriter();
+    out.print("<html><body>");
+    out.print("<b>hello HTTP servlet</b>");
+    out.print("</body></html>");
+  }
 
-		public void destroy()
-		{
-				System.out.println("-----------------------------------------------------");
-				System.out.println("destroy method has been called and servlet is destroyed");
-				System.out.println("-----------------------------------------------------");
-		}
+  public void destroy() {
+    System.out.println("-----------------------------------------------------");
+    System.out.println("destroy method has been called and servlet is destroyed");
+    System.out.println("-----------------------------------------------------");
+  }
 
 }

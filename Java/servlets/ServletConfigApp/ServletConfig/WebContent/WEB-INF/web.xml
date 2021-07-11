@@ -16,12 +16,12 @@
     
      <init-param>  
       <param-name>username</param-name>  
-      <param-value>ram</param-value>  
+      <param-value>satish</param-value>  
     </init-param>
     
     <init-param>  
       <param-name>password</param-name>  
-      <param-value>ram</param-value>  
+      <param-value>satish</param-value>  
     </init-param>   
     
   </servlet>
